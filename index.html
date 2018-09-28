@@ -6,39 +6,12 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-
-		    // Make sure this.hash has a value before overriding default behavior
-		    if (this.hash !== "") {
-		      // Prevent default anchor click behavior
-		      event.preventDefault();
-
-		      // Store hash
-		      var hash = this.hash;
-
-		      // Using jQuery's animate() method to add smooth page scroll
-		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 800, function(){
-		   
-		        // Add hash (#) to URL when done scrolling (default click behavior)
-		        window.location.hash = hash;
-		      });
-		    } // End if
-		  });
-		});
-	</script>
+ 	
 
  	<style type="text/css">
 		  body {
-		      font: 20px Montserrat, sans-serif;
+		  	  font-family: 'Montserrat', sans-serif;
+		      font: 20px 'Montserrat', sans-serif;
 		      line-height: 1.8;
 		      color: black;
 		      background-color: #f6f6f6;
@@ -129,8 +102,7 @@
 		}
 
 		.navbar-nav  li:hover a:hover {
-			background-color: rgba(255, 255, 255, 0.7);
-		    color: black !important;
+			background-color: rgba(255, 255, 255, 0.2);
 		}
 		h2{
 			color: black; 
@@ -207,8 +179,8 @@
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#aboutme" style="color: white; text-align: center;">ABOUT ME</a></li>
 		        <li><a href="#info" style="color: white; text-align: center;">INFO</a></li>
-		        <li><a href="#skill" style="color: white; text-align: center;">SKILL</a></li>
 		        <li><a href="#education" style="color: white; text-align: center;">EDUCATION</a></li>
+		        <li><a href="#skill" style="color: white; text-align: center;">SKILL</a></li>
 		        <li><a href="#personality" style="color: white; text-align: center;">PERSONALITY</a></li>
 		      </ul>
 		    </div>
@@ -218,13 +190,13 @@
 
 	<!-- BANNER -->
 	<div id="banner" class="container-fluid bg-1 text-center" style="padding-top: 10%;">
-		<h1 class="margin">Hi, I'm Sabdo!</h1>
+		<h1 class="margin" style="font-weight: bolder;">Hi, I'm Sabdo!</h1>
 		<img src="logo.png" class="img-responsive margin" style="display:inline" width="200" height="200">
-		<h4  id="aboutme" style="font-weight: normal; color: rgba(255, 255, 255, 0.7); line-height: 30px;">I'm an octopus. No, I'm kidding, just obsessed with them.<br>Now, I'm a student, soon to be big CEO.</h4>
+		<h4  style="font-weight: normal; color: rgba(255, 255, 255, 0.7); line-height: 30px;">I'm an octopus. No, I'm kidding, just obsessed with them.<br>Now, I'm a student, soon to be big CEO.</h4>
 	</div>
 
 	<!-- STORY -->
-	<div  class="container-fluid" style="width: 100%; background-color: white; padding: 0px; margin: 0px;" >
+	<div id="aboutme"  class="container-fluid" style="width: 100%; background-color: white; padding: 0px; margin: 0px;" >
 		<div class="container-fluid row" style="margin: 0px 10%; padding-bottom: 10px;" >
 		    <div class="col-sm-4 margin">
 		    	<center><img src="foto.jpg" class="img-responsiveS" style="display:inline; border-radius: 5px;" width="300"></center>
@@ -245,7 +217,7 @@
 	</div>
 
 	<!-- PROFIL -->
-	<div id="info" style="width: 100%; height: 30%; padding-top: 30px; padding-bottom:0px; margin-top: 0; margin-bottom: 0; background-color: #f4f4f4;" class="container-fluid">
+	<div id="info" style="width: 100%; height: 30%; padding-top: 30px; padding-bottom:0px; margin-top: 0; margin-bottom: 0; background-color: transparent;" class="container-fluid">
 		<center><h2 style="margin-bottom: 3%;">Detail Information</h2></center>
 		<table class="table" style="color: black;">
 		    <tbody>
@@ -276,19 +248,47 @@
 		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">0856 9123 8427 (Personal)<br>0858 0134 2853 (Business)</td>
 		      </tr>
 		      <tr>
-		        <td id="skill" style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">EMAIL</td>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">EMAIL</td>
 		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">sabdobramastyo98@gmail.com (Personal) <br> sabdobramastyo98@mail.ugm.ac.id (Student Email)</td>
 		      </tr>
 		    </tbody>
 		  </table>
 	</div>
 
-	<div  class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
+	<div id="education" class="container-fluid center" style="margin: 0px 8%;" >
+		<h2 style="margin: 20px; text-align: center;">Education</h2>	
+		<div class="col-sm-3" style="width: 250px; height: 85px; background-color: white; margin-right: 2%; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); padding: 15px; margin-bottom: 0px; margin-top: 10px; transform: translateX(50%);">
+			<div class="container-fluid" style="width: 30%; height: 5px; background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 0px; margin-top: 0px; border-radius: 5px"></div>
+			<h5 align="center" style="line-height: 0px; margin-top: 18px; font-weight: bolder;">SDN Sukorejo 2</h5>
+			<p style="font-size: 10px; line-height: 10px;" align="center">Always Number 1</p>
+			<h6 style="font-weight: normal; line-height: 0px" align="center">(2005-2011)</h6>
+		</div>
+		<div class="col-sm-3" style="width: 250px; height: 85px; background-color: white; margin-right: 2%; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); padding: 15px; margin-bottom: 0px; margin-top: 10px; transform: translateX(50%);">
+			<div class="container-fluid" style="width: 30%; height: 5px; background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); padding: 0px; margin-top: 0px; border-radius: 5px"></div>
+			<h5 align="center" style="line-height: 0px; margin-top: 18px; font-weight: bolder;">SMPN 3 Nganjuk</h5>
+			<p style="font-size: 10px; line-height: 10px;" align="center">Still Charming</p>
+			<h6 style="font-weight: normal; line-height: 0px" align="center">(2011-2014)</h6>
+		</div>	
+		<div class="col-sm-3" style="width: 250px; height: 85px; background-color: white; margin-right: 2%; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); padding: 15px; margin-bottom: 0px; margin-top: 10px; transform: translateX(50%);">
+			<div class="container-fluid" style="width: 30%; height: 5px; background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); padding: 0px; margin-top: 0px; border-radius: 5px"></div>
+			<h5 align="center" style="line-height: 0px; margin-top: 18px; font-weight: bolder;">SMAN 1 Nganjuk</h5>
+			<p style="font-size: 10px; line-height: 10px;" align="center">Science Programs</p>
+			<h6 style="font-weight: normal; line-height: 0px" align="center">(2014-2017)</h6>
+		</div>
+		<div class="col-sm-3" style="width: 250px; height: 85px; background-color: white; margin-right: 2%; border-radius: 5px; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); padding: 15px; margin-bottom: 0px; margin-top: 10px; transform: translateX(50%);">
+			<div class="container-fluid" style="width: 30%; height: 5px; background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); padding: 0px; margin-top: 0px; border-radius: 5px"></div>
+			<h5 align="center" style="line-height: 0px; margin-top: 18px; font-weight: bolder;">Universitas Gadjah Mada</h5>
+			<p style="font-size: 10px; line-height: 10px;" align="center">D3 Computer and Information System</p>
+			<h6 style="font-weight: normal; line-height: 0px" align="center">(2011-PRESENT)</h6>
+		</div>
+	</div>
+
+	<div id="skill" class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
 		<div class="container-fluid row" style="margin: 0% 10%; padding: 30px;">
 			<center><h2 style="margin-bottom: 50px;">Skills</h2></center>
 		    <div class="col-sm-6 margin">
-		    	<h4>My Favorites Quote</h4>
-		    	<h3 style="font-weight: normal;"><i>"Stay foolish, stay hungry"</i></h3>
+		    	<h4>MY FAVORITE QUOTE</h4>
+		    	<h3 style="font-weight: bolder;">"Stay foolish, stay hungry"</h3>
 		    	<p style="font-weight: normal; line-height: 30px; font-size: 12px;">Stay Hungry. Never be satisfied, and always push yourself. Stay Foolish. Do (or be willing to keep trying) the things people say cannot be done.</p>
 		    </div>
 		    <div class="col-sm-6">
@@ -306,7 +306,7 @@
 				</div>
 				<p>Java <small>(80%)</small></p>
 				<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
-				    <div id="education" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; box-shadow: none; background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);">
+				    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; box-shadow: none; background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);">
 				      <span class="sr-only">70% Complete</span>
 				    </div>
 				</div>
@@ -314,48 +314,13 @@
 		</div>
 	</div>
 
-	<center>
-	<div class="row" style="margin: 0% 7%;" >
-		<h2 style="margin: 20px">Education</h2>
-		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
-			<div style="margin-top: 20px; background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
-			</div>
-			<h4>SDN Sukorejo 2</h4>
-			<h5 style="font-weight: normal;">(2005-2011)</h5>
-		</div>
 
-		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
-			<div style="margin-top: 20px; background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
-			</div>
-			<h4>SMPN 3 Nganjuk</h4>
-			<h5 style="font-weight: normal;">(2011-2014)</h5>
-		</div>
-
-		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
-			<div style="margin-top: 20px; background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
-			</div>
-			<h4>SMAN 1 Nganjuk</h4>
-			<h6 style="font-weight: normal;">Science Programs</h6>
-			<h5 style="font-weight: normal;">(2014-2017)</h5>
-		</div>
-
-		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
-			<div style="margin-top: 20px; background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
-			</div>
-			<h4>Universitas Gadjah Mada</h4>
-			<h6 style="font-weight: normal;">D3 Computer and Information System</h6>
-			<h5 id="personality" style="font-weight: normal;">(2017-Present)</h5>
-		</div>
-
-	</div>
-	</center>
-
-	<div class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
+	<div id="personality" class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
 		<div class="container-fluid row" style="margin: 0% 10%; padding: 30px;">
 			<center><h2 style="margin-bottom: 50px;">Personalities</h2></center>
 		    <div class="col-sm-6 margin">
-		    	<h4>My Favorites Quote</h4>
-		    	<h3 style="font-weight: normal;"><i>"I watched the storm, so beautiful yet terriffic."</i></h3>
+		    	<h4>MY FAVORITE QUOTE</h4>
+		    	<h3 style="font-weight: bolder;">"I watched the storm, so beautiful yet terriffic."</h3>
 		    	<p style="font-weight: normal; line-height: 30px; font-size: 12px;">No matter what kond of storm you've got, you can dance with it, in the middle of the rain, with the storm.</p>
 		    </div>
 		    <div class="col-sm-6 margin">
@@ -407,5 +372,27 @@
 		</center>
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script>
+		function scrollNav() {
+		  $('.nav a').click(function(){  
+		    //Toggle Class
+		    $(".active").removeClass("active");      
+
+		    //Animate
+		    $('html, body').stop().animate({
+		        scrollTop: $( $(this).attr('href') ).offset().top - 85
+		    }, 1000);
+		    return false;
+		  });
+		  $('.scrollTop a').scrollTop();
+		}
+		scrollNav();
+	</script>
+
 </body>
 </html>
+

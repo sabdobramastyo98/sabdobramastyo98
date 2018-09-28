@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Sabdo Bramastyo Profile</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+
+ 	<style type="text/css">
+		  body {
+		      font: 20px Montserrat, sans-serif;
+		      line-height: 1.8;
+		      color: black;
+		      background-color: #f6f6f6;
+		  }
+		@-webkit-keyframes Gradient {
+			0% {
+				background-position: 0% 50%
+			}
+			50% {
+				background-position: 100% 50%
+			}
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		@-moz-keyframes Gradient {
+			0% {
+				background-position: 0% 50%
+			}
+			50% {
+				background-position: 100% 50%
+			}
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		@keyframes Gradient {
+			0% {
+				background-position: 0% 50%
+			}
+			50% {
+				background-position: 100% 50%
+			}
+			100% {
+				background-position: 0% 50%
+			}
+		}
+		  p {
+		  	  color: black;
+		  	  font-size: 16px;
+		  }
+		  .margin {
+		  	  margin-bottom: 45px;
+		  }
+		  .bg-1 { 
+		    background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+			background-size: 400% 400%;
+			-webkit-animation: Gradient 15s ease infinite;
+			-moz-animation: Gradient 15s ease infinite;
+			animation: Gradient 15s ease infinite;
+		    color: #ffffff;
+		  }
+		  .bg-2 { 
+		      background-color: #fff;
+		      color: #ffffff;
+		  }
+		  .bg-3 { 
+		      background-color: #ffffff; /* White */
+		      color: #555555;
+		  }
+		  .bg-4 { 
+		      background-color: #2f2f2f; /* Black Gray */
+		      color: #fff;
+		  }
+		  .container-fluid {
+		      padding-top: 70px;
+		      padding-bottom: 70px;
+		  }
+		.navbar {
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border: 0;
+		    border-radius: 0;
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    letter-spacing: 5px;
+		    position: fixed;
+		    width: 100%;
+		    background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+			background-size: 400% 400%;
+			-webkit-animation: Gradient 15s ease infinite;
+			-moz-animation: Gradient 15s ease infinite;
+			animation: Gradient 15s ease infinite;
+		    color: #ffffff;
+		    z-index: 200;
+		}
+
+		.navbar-nav  li:hover a:hover {
+			background-color: rgba(255, 255, 255, 0.7);
+		    color: black !important;
+		}
+		h2{
+			color: black; 
+			font-weight: lighter; 
+			margin-top: 0;"
+		}
+		.fa {
+		  padding: 15px;
+		  font-size: 20px;
+		  width: 50px;
+		  height: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 20px 5px;
+		  border-radius: 50%;
+		}
+
+		.fa:hover {
+		    opacity: 0.7;
+		}
+
+		.fa-facebook {
+		  background: #3B5998;
+		  color: white;
+		}
+
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		}
+
+		.fa-youtube {
+		  background: #bb0000;
+		  color: white;
+		}
+
+		.fa-instagram {
+		  background: #125688;
+		  color: white;
+		}
+
+		.fa-pinterest {
+		  background: #cb2027;
+		  color: white;
+		}
+
+		.fa-snapchat-ghost {
+		  background: #fffc00;
+		  color: white;
+		  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+ 	</style>
+</head>
+<body>
+
+	<!-- NAVIGATION BAR -->
+	<div class="parent-navbar">
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#banner" style="color: white;">SABDO BRAMASTYO</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#aboutme" style="color: white; text-align: center;">ABOUT ME</a></li>
+		        <li><a href="#info" style="color: white; text-align: center;">INFO</a></li>
+		        <li><a href="#skill" style="color: white; text-align: center;">SKILL</a></li>
+		        <li><a href="#education" style="color: white; text-align: center;">EDUCATION</a></li>
+		        <li><a href="#personality" style="color: white; text-align: center;">PERSONALITY</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<!-- BANNER -->
+	<div id="banner" class="container-fluid bg-1 text-center" style="padding-top: 10%;">
+		<h1 class="margin">Hi, I'm Sabdo!</h1>
+		<img src="logo.png" class="img-responsive margin" style="display:inline" width="200" height="200">
+		<h4  id="aboutme" style="font-weight: normal; color: rgba(255, 255, 255, 0.7); line-height: 30px;">I'm an octopus. No, I'm kidding, just obsessed with them.<br>Now, I'm a student, soon to be big CEO.</h4>
+	</div>
+
+	<!-- STORY -->
+	<div  class="container-fluid" style="width: 100%; background-color: white; padding: 0px; margin: 0px;" >
+		<div class="container-fluid row" style="margin: 0px 10%; padding-bottom: 10px;" >
+		    <div class="col-sm-4 margin">
+		    	<center><img src="foto.jpg" class="img-responsiveS" style="display:inline; border-radius: 5px;" width="300"></center>
+		    </div>
+		    <div class="col-sm-8">
+		    	<h2>Hi, I'm Sabdo Bramastyo!</h2>
+		    	<h5 style="color: rgba(0,0,0,0.2); margin: 5% 0%">STUDENT &amp; PART-TIMER</h5>
+		    	<p>Creative thinker with solid ability in developing innovative fresh user experiences of website and mobile apps. Hardworker and good in interpersonal communications expecially works in group and able to know what netizens need. Fresh graduated from considerable university.</p>
+		    	<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-pinterest"></a>
+				<a href="#" class="fa fa-snapchat-ghost"></a>
+		    </div>
+		</div>
+	</div>
+
+	<!-- PROFIL -->
+	<div id="info" style="width: 100%; height: 30%; padding-top: 30px; padding-bottom:0px; margin-top: 0; margin-bottom: 0; background-color: #f4f4f4;" class="container-fluid">
+		<center><h2 style="margin-bottom: 3%;">Detail Information</h2></center>
+		<table class="table" style="color: black;">
+		    <tbody>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">JOB</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">Full Time Student<br>D3 Computer and Information System<br>Universitas Gadjah Mada</td>
+		      </tr>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">ADDRESS</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">Sukorejo, Loceret<br>
+				Nganjuk 64471<br>
+				Indonesia</td>
+		      </tr>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">DATE OF BIRTH</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">Nganjuk, December 31, 1998</td>
+		      </tr>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">NATIONALITY</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">Indonesia</td>
+		      </tr>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">LANGUANGES</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">Indonesia (Mother Tongue)<br>English</td>
+		      </tr>
+		      <tr>
+		        <td style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">PHONE</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">0856 9123 8427 (Personal)<br>0858 0134 2853 (Business)</td>
+		      </tr>
+		      <tr>
+		        <td id="skill" style="text-align: right; width: 45%;  border: none; font-size: 16px; font-weight: bold;">EMAIL</td>
+		        <td style="text-align: left; width: 55%;  border: none; font-size: 16px;">sabdobramastyo98@gmail.com (Personal) <br> sabdobramastyo98@mail.ugm.ac.id (Student Email)</td>
+		      </tr>
+		    </tbody>
+		  </table>
+	</div>
+
+	<div  class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
+		<div class="container-fluid row" style="margin: 0% 10%; padding: 30px;">
+			<center><h2 style="margin-bottom: 50px;">Skills</h2></center>
+		    <div class="col-sm-6 margin">
+		    	<h4>My Favorites Quote</h4>
+		    	<h3 style="font-weight: normal;"><i>"Stay foolish, stay hungry"</i></h3>
+		    	<p style="font-weight: normal; line-height: 30px; font-size: 12px;">Stay Hungry. Never be satisfied, and always push yourself. Stay Foolish. Do (or be willing to keep trying) the things people say cannot be done.</p>
+		    </div>
+		    <div class="col-sm-6">
+		    	<p>UI/UX <small>(85%)</small></p>
+				<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+				    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%; box-shadow: none; background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);">
+				      <span class="sr-only">70% Complete</span>
+				    </div>
+				</div>
+				<p>Website <small>(70%)</small></p>
+				<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+				    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; box-shadow: none; background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);">
+				      <span class="sr-only">70% Complete</span>
+				    </div>
+				</div>
+				<p>Java <small>(80%)</small></p>
+				<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+				    <div id="education" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; box-shadow: none; background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);">
+				      <span class="sr-only">70% Complete</span>
+				    </div>
+				</div>
+		    </div>
+		</div>
+	</div>
+
+	<center>
+	<div class="row" style="margin: 0% 7%;" >
+		<h2 style="margin: 20px">Education</h2>
+		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
+			<div style="margin-top: 20px; background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
+			</div>
+			<h4>SDN Sukorejo 2</h4>
+			<h5 style="font-weight: normal;">(2005-2011)</h5>
+		</div>
+
+		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
+			<div style="margin-top: 20px; background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
+			</div>
+			<h4>SMPN 3 Nganjuk</h4>
+			<h5 style="font-weight: normal;">(2011-2014)</h5>
+		</div>
+
+		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
+			<div style="margin-top: 20px; background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
+			</div>
+			<h4>SMAN 1 Nganjuk</h4>
+			<h6 style="font-weight: normal;">Science Programs</h6>
+			<h5 style="font-weight: normal;">(2014-2017)</h5>
+		</div>
+
+		<div class="col-sm-3" style="width: 269px; height: 320px; padding: 10px; margin: 10px; border-radius: 5px; background-color: white; box-shadow:  0px 0px 5px rgba(0, 0, 0, .2);">
+			<div style="margin-top: 20px; background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);   margin: 40px 50px; width: 130px; height: 130px; border-radius: 300px;">
+			</div>
+			<h4>Universitas Gadjah Mada</h4>
+			<h6 style="font-weight: normal;">D3 Computer and Information System</h6>
+			<h5 id="personality" style="font-weight: normal;">(2017-Present)</h5>
+		</div>
+
+	</div>
+	</center>
+
+	<div class="container-fluid row" style="margin: 2% 8%; padding: 0px; background-color: white; box-shadow: 0px 0px 5px rgba(0, 0, 0, .2); border-radius: 5px;">
+		<div class="container-fluid row" style="margin: 0% 10%; padding: 30px;">
+			<center><h2 style="margin-bottom: 50px;">Personalities</h2></center>
+		    <div class="col-sm-6 margin">
+		    	<h4>My Favorites Quote</h4>
+		    	<h3 style="font-weight: normal;"><i>"I watched the storm, so beautiful yet terriffic."</i></h3>
+		    	<p style="font-weight: normal; line-height: 30px; font-size: 12px;">No matter what kond of storm you've got, you can dance with it, in the middle of the rain, with the storm.</p>
+		    </div>
+		    <div class="col-sm-6 margin">
+			    <p>Teamworking <small>(85%)</small></p>
+					<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+					    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%; box-shadow: none; background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);">
+					      <span class="sr-only">70% Complete</span>
+					    </div>
+					</div>
+					<p>Work Under Pressure <small>(80%)</small></p>
+					<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+					    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%; box-shadow: none; background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);">
+					      <span class="sr-only">70% Complete</span>
+					    </div>
+					</div>
+					<p>Creativity <small>(90%)</small></p>
+					<div class="progress" style="width: 100%; height: 5px; box-shadow: none; border-radius: 0; background-color: rgba(0,0,0,0.1);">
+					    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%; box-shadow: none; background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);">
+					      <span class="sr-only">70% Complete</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer" style="background-color: #181818; width: 100%; color: white; padding: 40px;">
+		<center>
+		<div class="row" style="text-align: left; width: 80%;">
+			<div class="col-sm-4" align="center">
+				<img src="logo.png" width="100px">
+			</div>
+			<div class="col-sm-4">
+				CONTACT ME<br>
+				<p style="color: rgba(255,255,255,0.5); line-height: 30px;">
+				Phone<br>
+				Email<br>
+				Address
+				</p>
+			</div>
+			<div class="col-sm-4">
+				CONTACT ME<br>
+				<p style="color: rgba(255,255,255,0.5); line-height: 30px;">
+				Phone<br>
+				Email<br>
+				Address
+				</p>
+			</div>
+		</div>
+		</center>
+	</div>
+
+</body>
+</html>
+
